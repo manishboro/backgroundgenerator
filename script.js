@@ -37,5 +37,5 @@ color2.addEventListener("input", setGradient);
 
 direction.addEventListener("click", setGradient);
 
-//button.addEventListener("click", console.log('hello'));
+button.addEventListener("click", copyTextFunc);
 
