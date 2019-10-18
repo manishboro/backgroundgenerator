@@ -54,6 +54,7 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+    text-align: center;
 }
 
 .bg-value--container {
@@ -94,4 +95,24 @@ h2 {
 
 .button:active {
     transform: scale(.9);
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    height: 15rem;
+    width: 100%;
+}
+
+.footer-container {
+    display: inline-block;
+    margin: auto;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    align-content: center;
 }
