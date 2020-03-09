@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Gradient Background</title>
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-<body id="gradient">
-	<h1>Linear-Gradient Background Generator</h1>
-	<div class="select-color">
-		<input class="color1" type="color" name="color1" value="#ff0000">
-		<input class="color2" type="color" name="color2" value="#ffff00">
-	</div>
-	<div class="select-container">
-		<select class="select" name="select">
-			<option value='to bottom'>to bottom</option>
-			<option value='to top'>to top</option>
-			<option value='to left'>to left</option>
-			<option value='to right'>to right</option>
-			<option value='to left top'>to left top</option>
-			<option value='to right top'>to right top</option>
-			<option value='to left bottom'>to left bottom</option>
-			<option value='to right bottom'>to right bottom</option>
-		</select>
-	</div>
-	<div class="bg-value">
-		<h2>Current CSS Background</h2>
-		<div class="bg-value--container">
-			<input type="text" value="linear-gradient(rgb(255, 0, 0), rgb(255, 255, 0));" id="bg-value--code" readonly>
-		</div>
-		<div class="copy-button">
-			<button class="button">COPY</button>
-		</div>
-	</div>
-	<footer class="footer">
-		<div class="footer-container">
-			<h3>Copyright © by Manish Boro. All rights reserved.</h3>
-		</div>
-	</footer>
-	<script type="text/javascript" src="./script.js"></script>
-</body>
+  <head>
+    <title>Gradient Background</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pragati+Narrow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <header class="header" id="gradient">
+      <div class="header-content">
+        <h1 class="header-content--text font-size-1">
+          Linear-Gradient Background Generator
+        </h1>
+
+        <div class="select-your-color">
+          <input class="color1" type="color" name="color1" value="#ff0000" />
+          <input class="color2" type="color" name="color2" value="#ffff00" />
+        </div>
+
+        <div class="select-direction">
+          <select class="select-direction--options" name="select">
+            <option value="to bottom">to bottom</option>
+            <option value="to top">to top</option>
+            <option value="to left">to left</option>
+            <option value="to right">to right</option>
+            <option value="to left top">to left top</option>
+            <option value="to right top">to right top</option>
+            <option value="to left bottom">to left bottom</option>
+            <option value="to right bottom">to right bottom</option>
+          </select>
+        </div>
+
+        <div class="linear-gradient-code">
+          <h2 class="linear-gradient-code--text font-size-2">
+            Current CSS Background
+          </h2>
+          <div class="linear-gradient-code--container">
+            <input
+              type="text"
+              value="linear-gradient(rgb(255, 0, 0), rgb(255, 255, 0));"
+              id="linear-gradient-code--input"
+              readonly
+            />
+          </div>
+          <div class="linear-gradient-code--copyButton">
+            <button class="button">copy</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer">
+      <div class="footer-container font-size-2">
+        <h3 class="footer-container--text">
+          Designed by
+          <blockquote class="footer-container--text margin-left-2">
+            <a href="#" class="footer-container--link">Manish Boro</a>
+          </blockquote>
+        </h3>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
